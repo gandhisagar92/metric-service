@@ -1,0 +1,9 @@
+{
+  "defaultProvider": "file",
+  "providers": {
+    "STOCK": "file",
+    "OPTION": "file",
+    "INDEX": "file",
+    "EXCHANGE": "file"
+  }
+}
