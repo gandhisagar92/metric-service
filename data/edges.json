@@ -1,0 +1,5 @@
+{
+  "E1": {"id": "E1", "type": "UNDERLYING_OF", "source": "OPT:IBM-2025-12-19-C-150", "target": "STK:IBM", "attributes": {}},
+  "E2": {"id": "E2", "type": "HAS_OPTION", "source": "STK:IBM", "target": "OPT:IBM-2025-12-19-C-150", "attributes": {}},
+  "E3": {"id": "E3", "type": "LISTED_ON", "source": "STK:IBM", "target": "EX:CBOE", "attributes": {"asOf": "2024-01-01"}}
+}
