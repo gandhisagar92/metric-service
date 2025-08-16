@@ -1,0 +1,71 @@
+{
+  "nodeTypes": {
+    "STOCK": {
+      "label": "Stock",
+      "attributes": {
+        "ISIN": { "type": "string" },
+        "RIC": { "type": "string" },
+        "BloombergTicker": { "type": "string" },
+        "TradingLineId": { "type": "string" },
+        "PostTradeId": { "type": "string" }
+      }
+    },
+    "OPTION": {
+      "label": "Option",
+      "attributes": {
+        "ISIN": { "type": "string" },
+        "RIC": { "type": "string" },
+        "BloombergTicker": { "type": "string" },
+        "OCCSymbol": { "type": "string" },
+        "strikePrice": { "type": "number" },
+        "contractSize": { "type": "integer" },
+        "expirationDate": { "type": "date" },
+        "optionType": { "type": "enum", "options": ["CALL", "PUT"] },
+        "underlyingInstrumentId": { "type": "string" }
+      }
+    },
+    "INDEX": {
+      "label": "Index",
+      "attributes": {
+        "ISIN": { "type": "string" },
+        "RIC": { "type": "string" },
+        "BloombergTicker": { "type": "string" }
+      }
+    },
+    "EXCHANGE": {
+      "label": "Exchange",
+      "attributes": {
+        "mic": { "type": "string" },
+        "country": { "type": "string" },
+        "timezone": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    }
+  },
+  "relationshipTypes": {
+    "LISTED_ON": {
+      "label": "LISTED_ON",
+      "attributes": { "asOf": { "type": "date" } },
+      "sourceTypes": ["STOCK"],
+      "targetTypes": ["EXCHANGE"]
+    },
+    "UNDERLYING_OF": {
+      "label": "UNDERLYING_OF",
+      "attributes": {},
+      "sourceTypes": ["OPTION"],
+      "targetTypes": ["STOCK", "INDEX"]
+    },
+    "HAS_OPTION": {
+      "label": "HAS_OPTION",
+      "attributes": {},
+      "sourceTypes": ["STOCK"],
+      "targetTypes": ["OPTION"]
+    },
+    "HAS_MEMBER": {
+      "label": "HAS_MEMBER",
+      "attributes": {},
+      "sourceTypes": ["INDEX"],
+      "targetTypes": ["STOCK"]
+    }
+  }
+}

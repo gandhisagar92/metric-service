@@ -1,0 +1,37 @@
+{
+  "STOCK": {
+    "InstrumentId": ["attributes.TradingLineId", "attributes.PostTradeId"],
+    "ISIN": ["attributes.ISIN"],
+    "RIC": ["attributes.RIC"],
+    "BloombergTicker": ["attributes.BloombergTicker"],
+    "TradingLineId": ["attributes.TradingLineId"],
+    "PostTradeId": ["attributes.PostTradeId"]
+  },
+  "OPTION": {
+    "InstrumentId": ["attributes.TradingLineId", "attributes.PostTradeId"],
+    "ISIN": ["attributes.ISIN"],
+    "RIC": ["attributes.RIC"],
+    "BloombergTicker": ["attributes.BloombergTicker"],
+    "TradingLineId": ["attributes.TradingLineId"],
+    "PostTradeId": ["attributes.PostTradeId"],
+    "OCCSymbol": ["attributes.OCCSymbol"],
+    "UnderlyingTradingLineId": ["attributes.underlyingTradingLineId", "attributes.UnderlyingTradingLineId"],
+    "UnderlyingInstrumentId": ["attributes.underlyingInstrumentId", "attributes.UnderlyingInstrumentId"],
+    "EconomicsFields": {
+      "UnderlyingInstrumentId": "attributes.underlyingInstrumentId",
+      "UnderlyingTradingLineId": "attributes.underlyingTradingLineId",
+      "StrikePrice": "attributes.strikePrice",
+      "ContractSize": "attributes.contractSize",
+      "ExpirationDate": "attributes.expirationDate",
+      "OptionType": "attributes.optionType"
+    }
+  },
+  "INDEX": {
+    "InstrumentId": ["attributes.TradingLineId", "attributes.PostTradeId"],
+    "ISIN": ["attributes.ISIN"],
+    "RIC": ["attributes.RIC"],
+    "BloombergTicker": ["attributes.BloombergTicker"],
+    "TradingLineId": ["attributes.TradingLineId"],
+    "PostTradeId": ["attributes.PostTradeId"]
+  }
+}

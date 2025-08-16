@@ -1,0 +1,7 @@
+{
+  "STK:IBM": {"id": "STK:IBM", "type": "STOCK", "label": "IBM", "attributes": {"ISIN": "US4592001014", "RIC": "IBM.N", "BloombergTicker": "IBM US"}},
+  "STK:AAPL": {"id": "STK:AAPL", "type": "STOCK", "label": "Apple", "attributes": {"ISIN": "US0378331005", "RIC": "AAPL.O", "BloombergTicker": "AAPL US"}},
+  "IDX:SPX": {"id": "IDX:SPX", "type": "INDEX", "label": "S&P 500", "attributes": {"RIC": "SPX", "BloombergTicker": "SPX Index"}},
+  "EX:CBOE": {"id": "EX:CBOE", "type": "EXCHANGE", "label": "CBOE", "attributes": {"mic": "XCBO", "country": "US", "timezone": "America/Chicago", "name": "Cboe Options"}},
+  "OPT:IBM-2025-12-19-C-150": {"id": "OPT:IBM-2025-12-19-C-150", "type": "OPTION", "label": "IBM 150C Dec-2025", "attributes": {"ISIN": "US-IBM-C-150-20251219", "RIC": "IBM1C...", "BloombergTicker": "IBM 12/25 C150", "OCCSymbol": "IBM 25C 12/19", "strikePrice": 150, "contractSize": 100, "expirationDate": "2025-12-19", "optionType": "CALL", "underlyingInstrumentId": "STK:IBM"}}
+}

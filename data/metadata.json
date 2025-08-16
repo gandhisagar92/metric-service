@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "referenceDataTypes": {
+    "STOCK": {
+      "queryBy": {
+        "InstrumentId": { "inputs": [{ "name": "value", "label": "Instrument ID", "type": "string", "required": true }] },
+        "ISIN":         { "inputs": [{ "name": "value", "label": "ISIN",          "type": "string", "required": true }] },
+        "TradingLineId":{ "inputs": [{ "name": "value", "label": "Trading Line ID","type": "string", "required": true }] },
+        "PostTradeId":  { "inputs": [{ "name": "value", "label": "Post-Trade ID", "type": "string", "required": true }] },
+        "RIC":          { "inputs": [{ "name": "value", "label": "RIC",           "type": "string", "required": true }] },
+        "BloombergTicker": { "inputs": [{ "name": "value", "label": "BB Ticker",  "type": "string", "required": true }] }
+      }
+    },
+    "OPTION": {
+      "queryBy": {
+        "InstrumentId": { "inputs": [{ "name": "value", "label": "Instrument ID", "type": "string", "required": true }] },
+        "RIC":          { "inputs": [{ "name": "value", "label": "RIC",           "type": "string", "required": true }] },
+        "TradingLineId":{ "inputs": [{ "name": "value", "label": "Trading Line ID","type": "string", "required": true }] },
+        "OCCSymbol":    { "inputs": [{ "name": "value", "label": "OCC Symbol",    "type": "string", "required": true }] },
+        "PostTradeId":  { "inputs": [{ "name": "value", "label": "Post-Trade ID", "type": "string", "required": true }] },
+        "ISIN":         { "inputs": [{ "name": "value", "label": "ISIN",          "type": "string", "required": true }] },
+        "BloombergTicker": { "inputs": [{ "name": "value", "label": "BB Ticker",  "type": "string", "required": true }] },
+        "UnderlyingTradingLineId": { "inputs": [{ "name": "value", "label": "Underlying Trading Line ID", "type": "string", "required": true }] },
+        "UnderlyingInstrumentId":  { "inputs": [{ "name": "value", "label": "Underlying Instrument ID",  "type": "string", "required": true }] },
+        "Economics": {
+          "inputs": [
+            { "name": "UnderlyingInstrumentId",  "label": "Underlying Instrument ID",  "type": "string", "required": true },
+            { "name": "UnderlyingTradingLineId", "label": "Underlying Trading Line ID", "type": "string" },
+            { "name": "StrikePrice",             "label": "Strike Price",               "type": "number", "required": true },
+            { "name": "ContractSize",            "label": "Contract Size",              "type": "number" },
+            { "name": "ExpirationDate",          "label": "Expiration Date",            "type": "date",   "required": true },
+            { "name": "OptionType",              "label": "Call or Put",                "type": "enum",   "options": ["CALL","PUT"], "required": true }
+          ]
+        }
+      }
+    },
+    "INDEX": {
+      "queryBy": {
+        "InstrumentId": { "inputs": [{ "name": "value", "label": "Instrument ID", "type": "string", "required": true }] },
+        "ISIN":         { "inputs": [{ "name": "value", "label": "ISIN",          "type": "string", "required": true }] },
+        "TradingLineId":{ "inputs": [{ "name": "value", "label": "Trading Line ID","type": "string", "required": true }] },
+        "PostTradeId":  { "inputs": [{ "name": "value", "label": "Post-Trade ID", "type": "string", "required": true }] },
+        "RIC":          { "inputs": [{ "name": "value", "label": "RIC",           "type": "string", "required": true }] },
+        "BloombergTicker": { "inputs": [{ "name": "value", "label": "BB Ticker",  "type": "string", "required": true }] }
+      }
+    }
+  }
+}
