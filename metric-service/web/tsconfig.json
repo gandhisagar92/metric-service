@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"target": "ES2021",
+		"lib": ["ES2021", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"jsx": "react-jsx",
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"exactOptionalPropertyTypes": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": ["src/components/*"],
+			"@/api/*": ["src/api/*"],
+			"@/hooks/*": ["src/hooks/*"],
+			"@/store/*": ["src/store/*"],
+			"@/types/*": ["src/types/*"],
+			"@/utils/*": ["src/utils/*"]
+		},
+		"types": ["vite/client"]
+	},
+	"include": ["src"]
+}

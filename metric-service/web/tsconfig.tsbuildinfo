@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/api/client.ts","./src/components/DynamicForm.tsx","./src/components/GraphView.tsx","./src/components/PayloadPanel.tsx","./src/store/graphStore.ts","./src/types/api.ts"],"version":"5.9.2"}
