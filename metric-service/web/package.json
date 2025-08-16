@@ -1,0 +1,33 @@
+{
+  "name": "financial-data-relationship-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 5173"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.45.0",
+    "axios": "^1.7.7",
+    "classnames": "^2.5.1",
+    "graphology": "^0.25.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sigma": "^3.0.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.3"
+  }
+}
